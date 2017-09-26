@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="90" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16">
+  <image source="levelonetiles.png" width="400" height="400"/>
+  <tile id="49">
+   <properties>
+    <property name="stand" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="626" name="meta_tiles" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="meta_tiles.png" width="67" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="Stand" value="True"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Win" value="True"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Water" value="True"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="BlockRight" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="632" name="bg_castle" tilewidth="16" tileheight="16">
+  <image source="bg_castle.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="888" name="star" tilewidth="16" tileheight="16">
+  <image source="star.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="889" name="tilea1" tilewidth="16" tileheight="16">
+  <image source="watertiles.png" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="1657" name="requireskey" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="requireskey.png" width="400" height="400"/>
+ </tileset>
+ <layer name="cav" width="90" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3YZ9vOdQCA4ZtHA0mEjGSVMstuKGSlJXskSrJHEh6UVbJXVkZl77KpyKoQ2XuTvUdWKTo/wu/tfRz/F+fL6wtciUljsU50pguf8Cld6UZ3etCTz/icXnxBbxKjPqjvQ1/60Z8BDGQQgxnCUL5kGMMZwUhGRX1w/xWjGcNYxvE13/At45nARCYxmSlMZVrUB/fTmcFMZjGb7/ieOcxlHvNZwEIWsZglUR/c/8CP/MRSlvEzy1nBSlaxml/4ld9Yw9qoD+7X8Tvr2cAfbGQTm9nCVraxnR3sZBe7oz6438Ne9rGfAxzkEIc5wlH+5BjHOcFJTkV9cH+aM5zlHOe5wEUucZkrXOUvrnGdG9yM+uD+Fn/zD7f5l/+4w11iCbFYEpKSQDLu4V7uS4j60P5+kpOClDxAKh4kNQ+RhrQ8TDrSk4FHoj64z0gmMpOFR8nKY2QjOznISS4e5wly82TUB/dPkYe85CM/BSjI0zxDIQpThKIUozgloj64f5bneJ4XKMmLvEQpSlOGlylLOcpTgYpRH9y/QiVe5TVe5w3epDJvUYWqVKM6NahJragP7mtTh7q8TT3eoT4NeJf3aMj7NOIDGtMk6oP7pjSjOS1oSSta04YPactHtONj2tOBjlEf3MfLv433Pl7+bbz38fJv472Pl38b7/3/feeWxyAcAAA=
+  </data>
+ </layer>
+ <layer name="water" width="90" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3POQqAUBBEwR/8S7mvF/WmdiwYiJhIFbxsgp5SAAAAAAAA4B+OWkqT2tSlPg1pTFOa05LWtKW9frvnuuXptru7Nz+eREkaaCAcAAA=
+  </data>
+ </layer>
+ <layer name="bg" width="90" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2XuU7DQBRFswMB/oAEQYCSLdDRsyWhAoVV7EkHSEh07AJRQceiSAT4CbafoIMOasQ3wLWwpcfIMxmHSRyDr3Rkj2div3fnzTj2eNSq16f4hjYo5rU7gsJKwecRh3vdV0af/fAqAIIgJPCtnunLoJ0t0ucV5LfK5LhO2huS+T+DF0H/K3gT9I+S56RxPg4mwCS5PqNoLhrgVQREy1CbB4j5UI/7iBP/Ma6fOGA9W1U599lL+JdX6GG4xPMRkPCGXec8pSTHpRXMx63D6jQikXObpC8ZyXFrCnx+cpjPrr6lvcfG9LlLM3M4hfa0V917jCcV69xVYalY567+ruI6PQRX6uXXCYAgCNkbTsXJrA7NKPQbM5959/6PYr2pAtUmUCV0koQGnQiIgkbOuGRJs6kMsfWliedzE4MTFPf8zJGqHXSATtAFujn3eAc58PGLOMz2T1E907YdMnKWzdvIwzhS9YMBMAiGwDDnHjkCVTH7K5XsvvGpDca3gxf4gL8M34i8nKloDYt8ngVzYB4sgEWLz+T5xB55kt03dsEe2GfOSykZn2n8Ip81LYFlkAFZpi8uwHjPy/qcB1fgGtyYxCmqZ9l1IwNVDQiDWlAn2Uc9sOLzJtgC22CH6UsISAp8MvP5DtyDB/CoX5OpZ97/hmKhagYx0AJaJfsCJGYrPp+CM3AOLpi+L7ORHNwgHAAA
+  </data>
+ </layer>
+ <layer name="bgtwo" width="90" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WSU5CQRhF4UrUek+wdwaIfTu0xV7n9r1MsUGwY1W6Cl2FrkL34DG1gUoNHhDuSb5hJX/uqIxRStWzN2vMu03uXav2Yd1mIbSzf1/WbR3iUzt792Pd1iG+tbN3bZHbOsSvdvYuE7mtQ7RH9b6eG2JjOmARIUYnUkijC93oQS/60I8BDMbJ3vq/dYhsA+ycZaschpDHMEYwijGMYwKTmMI0ZjCLuYR3bubm2WoBi1jCMlZQwCrWsI4NbGIL29jBrnZWSinl2R5/i30c4BBHOMYJTnGGc1zgEle4RrEB/iTNVIm9bnCLO9yjjAdUUMUjnvCMF7yipp2VUqpl+gNl160mIBwAAA==
+  </data>
+ </layer>
+ <layer name="block" width="90" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2W2wqAIBBEw0+Owt/vqYe2tcbbqDAHBMHF7DRqMWyiEzH4fdEWeeYgzxzkmYM8c5BnDvLMQZ45yDOHFT3v4d1mZ0XPdp0rrJvp2cvhXza9cc8zMtdImJ6R+ZGsonmeKee9PHu5KvE8K7n7Rp7LsGcVUu/1PUrO19SzampGYe+IXp5rPa3uOee+PcKzWc9fOWV5RvdN7b8LMvaV4VLPiAOk5kw0ZL+0zLNdi3WDjKHf076r5/muvQA2lZ7/IBwAAA==
+  </data>
+ </layer>
+ <objectgroup name="starObjs" width="90" height="20">
+  <object name="star1" x="176" y="240"/>
+  <object name="star2" x="48" y="272"/>
+  <object x="464" y="176"/>
+  <object name="star3" x="464" y="176"/>
+  <object name="star4" x="736" y="144"/>
+  <object name="star5" x="784" y="272"/>
+  <object name="star6" x="1120" y="240"/>
+  <object name="star7" x="640" y="272"/>
+  <object name="star8" x="1232" y="192"/>
+ </objectgroup>
+ <objectgroup name="Object" width="90" height="20">
+  <object name="EnemyTwo" x="832" y="176"/>
+ </objectgroup>
+ <objectgroup name="moveObjs" width="90" height="20"/>
+ <objectgroup name="powerObjs" width="90" height="20">
+  <object name="shotrefill1" x="240" y="240"/>
+  <object name="shotrefill2" x="688" y="144"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="150" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="watertiles" tilewidth="16" tileheight="16">
+  <image source="../watertiles.png" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="769" name="levelonetiles" tilewidth="16" tileheight="16">
+  <image source="../levelonetiles.png" width="400" height="400"/>
+ </tileset>
+ <tileset firstgid="1394" name="bg_castle" tilewidth="16" tileheight="16">
+  <image source="../bg_castle.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1650" name="meta_tiles" tilewidth="16" tileheight="16">
+  <image source="../meta_tiles.png" width="67" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="Stand" value="True"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="BlockRight" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1658" name="requireskey" tilewidth="16" tileheight="16">
+  <image source="../requireskey.png" width="400" height="400"/>
+ </tileset>
+ <layer name="cav" width="150" height="20">
+  <properties>
+   <property name="background" value="bg"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2ndPFEEcxvGz3Nl772Iv2HtPsPe3wGtQOVCKiQJKURNFRAVM7AU1sXcTezexdxN7N7F3/S6ycbOZndld+EPNkHyyt/O7Z2aZnTs27OYEA4HVWIO1yMYiyzYHi2379toSLEWuIudm3+zLa7tobPP3cnvsTu3rbXO0rqhtAwo8HpObWkn353Ust++VjWefJ3P+7PNo3ZfNsSznZt9+HG7bRWOLMn7XlTmGqH9Zn07HJDt3XjO5irHczo3ZvtphLNG5czom6/tkx+22ze/nyWu733Fkc+/U7ufc+M346avARd1pTop7fE7viwoFApPZTlEcl9s2v/Pitd3vOGHEIg5TMQ3xSEAikjAdk4J/5iXmP8j5Wcfm1s94MzATyUhBKmZhNtKQjgxkYg7mYp4gZ6xPPzm/4+nc352bjwXIwsKg/G9IHvKxTOd0TpFbjhVYiVVB+ffiRmzCZp3TOUVuC7ZiG7ZjB3ZiF3ZjD/ZiH/bjAA7qnM4pcodwGEdwFMdwHCdwEqdwGmdwFudwXud0TpG7gIu4hMu4gqu4huu4gZu4hdu4g7s6p3OK3D3cxwM8xCM8xhM8xTM8xwu8xCu81jmdU+Te4C3e4T0+4CM+4TO+4Cu+4Tt+4KfO6ZwiVzoUCJRBWQQRQjmURwVURCVURhVURbWQzumcPFcTtVAbdVAX9VAfDdAQjdAYTdAUzXRO5xS5FmiJVmiNNmiLdmiPDuiISHRCZ3TROZ1T5LqjB3qiF3qjD/qiH/pjAAZiEAZjiM7pnCJn3NcbimEYjhEYiVEYjTEYi3EYjwmYWJSLCQaiRdd2AWqlQoX/05fWkxX1PEU901LPEdQTFHlVPVFRzy/m8ctqorawoj+ne9NO58/veXeTiyom67WdsW9c21VHjVDh/choaz2X/XRkwXjNHERnw1h/1mtDMx9ny9vr8Yp6rqKeoqhnKOphRT1WUZfVRG2piv6c7hV7eT6ipJ65SLMx7iMa60O0NV+bjDUhurZrjojQ78+7U91YX2lFa8s4f6J8jqL/JEU9X1A3vtfMeliRzyjG7xdRtG5ldVlN1Ban6M/pXrGX5xWcasaPl2cgROtKRvSdFWl5bVzbdUW3kPO1n7VufAYNTnVV/l+uy2p++nO6V+zleYWSegbiF+qAXg0=
+  </data>
+ </layer>
+ <layer name="water" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt0kcOwjAUAFErN6RzDTrXo7dT0NslmOwQckgQi2zmSbOwZPlbTkKQJEmSJEmSJEmSJEmSJEmSfldJQqhSLSl/fp0aJd0j6z4xE5rSjOa0yDir6L7Y3PQdmtSids6bxOYsaUXryHpDW9p9P/YvHe7cpV5J3/N9fp8GJf9Xn/eJ2dOBjnSic8ZZRffF5qbvMKQRjXPeJDbnQle6RdZ3etCTXk0tOWs=
+  </data>
+ </layer>
+ <layer name="bg" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztlklSwzAQRV0lQ8JwBIaEYQ+EHcMeCDuGPQRYMVyA4QrALYAlQ+5AMV2C6RR8CquiKJYS2QqQ5L+qX+3YLbvV3ZISBIQQQgghhBBCCCGEEEIIScOU+OsICCGkMUodtl8JzDeEuqBuKCNq78X5ZNs4T8PCLBcm4D8pOvMMHMCcB6GhKG85UXsvziffxrmy9dVpGARnYcWeh+b3LMB/EVpKmSuZ/1aqQyvF+lvI/Tlun75AH12GFXtl6asN+G+K9Gfgf+6raXy/IH6sSjPOuFY/R211jHsmrUoPfvdCfVC/p3z6yGMG6yBrWQuNIPuoCC0rVqUZayDNOepj3mmx1dFECTFvQdvQDjQC31FoDBr3lE8ffZVDbHnH/Mo+MvWTlIopVp/1demrJPNOyjViuIFuoTuoLKrjjYvbxCFiPoKOoRNoBr6z0Bw0H40riOoama71ey77lRyjv8vVqt839VGS/cpnfV3yYbIm33rPTbX65gH2EXqCnqEXra/UnNTrK50V+K5Ca9B6NK4ozLq3yOX/lVp7ve4utphgXL0a+bYu+WgkZn3+tudx+ZL+r7Bv0Dv0AX1qfeWyX+nswncP2ocOonFfAelk4Q==
+  </data>
+ </layer>
+ <layer name="bgtwo" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt09VRBEEARdHGZkgAdwLAbZcAcCceXBf5hWVx/cXdAsAtA9wyAC4hQFG1w9S7Vee/u/q1MUoppZRSSiml1O9qsoxpRgta0YZ2dKATXehGD3rhQx/6MYBBK9g3UE5siF0Mw48RBDCKMYxjApOYwjRmMIs5zGPBYbuKso2JRgxiEYd4JCARSUhGClKRhnQ72Kd2X4vsYgnLWMEq1rCODWxiC9vYwS72sI8DHDpsVxlsJBNZyEYOcpGHfBSgEEXwwItil+zqiLc4xglOcYZzXOASV7jGjcPe7D9UwkZKUYZyVKASVahGDWpRh3o0oNElu7plL3e4xwMe8YRnvOAVb3jXrtQP+mAvn9+b4Z+EIBRhCEcELNiIdMk/UkoppZRSSimllFJKqb/qC4vUQJw=
+  </data>
+ </layer>
+ <layer name="block" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztl1sOwiAQAEk/ej/1JNaYeHzhg6Qii5R2LY+ZhLQlvBamEIwBAAAAAAAAAACom9d89gigR/AKNMAr0ACvQINRvFrm8tQrmjGP4lUszlFil3Dxh3MQyytteyst/t949U1tXkl9HzWmPUh+a3jV+jl6hFe+fFivB6/Wa+j7d8/LZMzVptv0n/2qtT0Rrz4J94NYPO55tz4tNj3wKoqmV8+C+9EWr/bcw1L9h/2G77V65ecoZ07DcrltpdYoVv9XXorUmd+rV1KZdZ7muKRx5M5dzrfkwJlevQFZwope
+  </data>
+ </layer>
+ <objectgroup name="Object" width="150" height="20">
+  <object name="EnemyOne" x="183" y="281"/>
+  <object name="EnemyTwo" x="1866" y="277"/>
+  <object name="Gate" x="106" y="279"/>
+  <object x="689" y="271" visible="0"/>
+ </objectgroup>
+ <objectgroup name="starObjs" width="150" height="20">
+  <object name="star6" x="1402" y="232"/>
+  <object name="star7" x="1900" y="280"/>
+  <object name="star8" x="1997" y="277"/>
+  <object name="star5" x="1039" y="184"/>
+  <object name="star1" x="170" y="220"/>
+  <object name="star2" x="149" y="259"/>
+  <object name="star3" x="202" y="223"/>
+  <object name="star4" x="198" y="259"/>
+ </objectgroup>
+ <objectgroup name="moveObjs" width="150" height="20">
+  <object name="Key" x="2105" y="180"/>
+ </objectgroup>
+ <objectgroup name="powerObjs" width="150" height="20">
+  <object name="shotrefill1" x="689" y="273"/>
+  <object name="shoterfill2" x="1705" y="279"/>
+  <object name="platform" x="2012" y="283"/>
+ </objectgroup>
+</map>

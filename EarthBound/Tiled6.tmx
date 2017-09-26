@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="150" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="requireskey" tilewidth="16" tileheight="16">
+  <image source="requireskey.png" width="400" height="400"/>
+ </tileset>
+ <tileset firstgid="626" name="watertiles" tilewidth="16" tileheight="16">
+  <image source="watertiles.png" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="1394" name="meta_tiles" tilewidth="16" tileheight="16">
+  <image source="meta_tiles.png" width="67" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="Stand" value="True"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="BlockRight" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1402" name="bg_castle" tilewidth="16" tileheight="16">
+  <image source="bg_castle.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1658" name="levelonetiles" tilewidth="16" tileheight="16">
+  <image source="levelonetiles.png" width="400" height="400"/>
+ </tileset>
+ <layer name="cav" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzV2lOQHUEUgOEbbWzbtm3btm1WbNvZ2Bvbtm3btvH3Q15SlZue7kx3Zau+t/7v6VMzbzvdAnk83dEDPdELvdEHfdEP/TEAXdHNwfmBGKTYmZwlusGa7ZD/8M5uPpdhGI4RGIlRGI0xGItxGI8JGOrw/ERMUuxMzhLdZM12ioU7d7Wwr2wzFdMwHTMwE7MwG3MwF/MwH74Ozy/AQsXO5CzR+Wm2iyzceaiFfWWbJViKZViOFViJVViNNViLdVjs8Px6bFDsTM4S3UbNdpOFO/ta2Fe22YKt2Ibt2IGd2IXd2IO92IfNDs/vxwHFzuQs0R3UbA9ZuPNiC/vKNkdwFMdwHCdwEqdwGmdwFudw2OH587ig2JmcJbqLmu0lC3febGFf2eYKruIaruMGbuIWbuMO7uIeLjs8fx8PFDuTs0T3ULN9ZOHOhy3sK9s8wVM8w3O8wEu8wmu8wVu8w2OH59/jg2JncpboPmq2nyzc+bKFfWWbL/iKb/iOH/D4eDz+4B8BEBCB8NnheR8EVuxMzhJdEM02qIU7i2dsel/ZJjhCICRCITTCICzCITwiICKCOTwfCZEVO5OzRBdFs41q4c7iGZveV7aJjhiIiViIjTiIi3iIjwRIiGgOzydCYsXO5CzRJdFsk1q4czAL+8o2yZECKZEKqZEGaZEO6ZEBGZHM4flMyKzYmZwluiyabVYLd45mYV/ZJjtyICdyITfyIC/yIT8KoCCyOTxfCIUVO5OzRFdEsy1q4c7JLOwr2xRHCZREKZRGGZRFOZRHBVREMYfnK6GyYmdyluiqaLZVLdw5m4V9ZZvqqIGaqIXaqIO6qIf6aICGqCZ5XvyJ843Q2EH3a04jxUZ1luiaaLZNLdy5mIV9ZRsT3640Y05ztEBLtEJrtEFbtEN7dEBHdPJRazprdF3+0DrZ2fSdq7mwb+u/7Cw7z8S3K7++I5F9D3//37it76IG/4Odvc3W3cvbM3ZrZ9nfNfHtip/lZ6vT63474222m++sWzvL/q6Jb1c2Wn62Or3utzPeZrv5zrq1s+zvmvh25aDlZ6vT63474222m++sWzvL/u5PrGxZtw==
+  </data>
+ </layer>
+ <layer name="water" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt0UEKgzAURdGAO2q1WrX731bfRJBQqFGcnQN3IPlo+JYCAAAAAAAAAAAAAHDdoyvlmfo0pFcafzxP6Z3mtKQ1fXYzZ75Rv3N/fsd8fee758c/c0d31vIPr+y/defb+RfiHxq8
+  </data>
+ </layer>
+ <layer name="bg" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1klOwzAYhmGvktNQ6CVoyyWYuQUzXIGpwB5od4XuC7co3IVvF7Ac186oSO8jfUplWbZr/05rDAAAAAAAAAAAAAAAANA9Z6kx5+n/tklizDTJni/Kq/KWtLNGdM+9auoh9fdZqJ4+la+CdWXXad6zjKrGdN2zKk2SLFPHZ19b2T1qQsy6l2r/Vn4Cv1cTe+Ga40D1cKgcpf5+PiH3zLam/j1lXdlQ+hHzu9acx1V3trrvRVUutPZL5Uq5zjmXturIdqz9PFFOPfsa+u70vTPsc93UfANlqIyUrYhzDVlzjCL3IlYV79Kx+j8qT8rznzHqqKNV57fKjfbzVrlr+L5ua74dZVfZU/Yj5i+75tDfzJj/IEX3P8ZMY74rH8pc+QWNUn2J
+  </data>
+ </layer>
+ <layer name="bgtwo" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzsVSFQAAhlFmFLtjZ3fBzu7CldgK5g6wO3aC3fEAJvYD2O0D2JgP41neHePA3MHx/2bO/ispSSmllFJKKaWUUkop/atd4SrXuM4NbtLILW5zh7vc4z4PCqTma0d7SulARzrRmS50pRvd6UFPetGbPvSlH/2LPd6CHvKIxzzhKc94zgte8orXvOEt7wqk5hvAQAYxmCEMZRjDGcFIRjGaMYxlHOOZQBnlRf5uSe/5wEc+8ZkvfKWJb3znBz/5xe8Cba3FVLKEpSxjOStYySpWs4YqqlnLOtazgY1sasWniUxiMlOYyjSmM4OZzGI2c5jLPOazgIVUsKgVn9LfVUMtdWxmC1vZxnZ2sJNd7GYPe9nHfg5wkEPFHk9tusPU08ARjnKM45zgJKc4zRnOco7zXOAil7hc5O+UUkoppZRSSin9v/0BD6FEdA==
+  </data>
+ </layer>
+ <layer name="block" width="150" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1EsKhDAQBUA3XnhWHl9cDDhhxER9/qiC3gi2SefFrgMAAACAexv6q1fAG8kVCXJFglyRIFckyBUJcsUWn/63SnJFQmuuypwu1R6Jngm1s3jKfkp71r2WqzNmUfuNq88lfXeeasrQvL7P5u6Uo9Y+b/9/JBwxi3/vDqHZOr92tTNruR9nzL/sPwKU0EaS
+  </data>
+ </layer>
+ <objectgroup name="Object" width="150" height="20">
+  <object name="Gate" x="96" y="276"/>
+  <object name="EnemyOne" x="436" y="281"/>
+  <object name="EnemyTwo" x="2146" y="281"/>
+ </objectgroup>
+ <objectgroup name="starObjs" width="150" height="20">
+  <object name="star1" x="151" y="265"/>
+  <object name="star2" x="175" y="265"/>
+  <object name="star3" x="794" y="285"/>
+  <object name="star4" x="1175" y="281"/>
+  <object name="star5" x="1266" y="234"/>
+  <object name="star8" x="2201" y="218"/>
+  <object name="star7" x="1831" y="282"/>
+  <object name="star6" x="1627" y="289"/>
+ </objectgroup>
+ <objectgroup name="moveObjs" width="150" height="20">
+  <object name="Key" x="2109" y="268"/>
+ </objectgroup>
+ <objectgroup name="powerObjs" width="150" height="20">
+  <object name="shotrefill1" x="1009" y="267"/>
+  <object name="platform1" x="1167" y="280"/>
+  <object name="shotrefill2" x="1961" y="276"/>
+ </objectgroup>
+</map>

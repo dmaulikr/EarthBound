@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="125" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="bg_castle" tilewidth="16" tileheight="16">
+  <image source="bg_castle.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="257" name="tiles" tilewidth="16" tileheight="16">
+  <image source="levelonetiles.png" width="400" height="400"/>
+ </tileset>
+ <tileset firstgid="882" name="tilea1" tilewidth="16" tileheight="16">
+  <image source="watertiles.png" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="1650" name="star" tilewidth="16" tileheight="16">
+  <image source="star.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="1651" name="meta_tiles" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="meta_tiles.png" width="67" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="Stand" value="True"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Ice" value="True"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Win" value="True"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Water" value="True"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="BlockRight" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1657" name="requireskey" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="requireskey.png" width="400" height="400"/>
+ </tileset>
+ <layer name="cav" width="125" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3ZZ9sIZACG4fctyqxIZCs0yCh7ZiSjtIhkU3YyQlbDCqWUWUbRpIGM7L0rewuVnZ3ZME7f/AM9R899HOfH6xfciQkJCTdwI0lIyk3cTDKSk4KUpCI1t3Art5EY++D6NKTldtJxB+nJwJ1kJBOZyUJWspGdHLEPsr+Lu8lJLnJzD/dyH/eTh7w8QD7yU4CCsQ+yf5CHKERhilCUYhSnBCUpRWnKUJaHKRf7IPvyVKAij1CJR6lMFapSjcd4nOo8wZM8Ffsg+6d5hhrU5FlqUZvnqMPz1KUe9WlAQxrFPsi+MU1oygu8SDOa04KWtKI1bXiJtrxMu9gH2benAx15hU50pguv0pVudKcHPXmN13kj9kH2b9KL3vShL/14i/4MYCBv8w6DeJf3GBz7IPv3+YAhDGUYwxnBSD7kI0YxmjGM5WM+iX2Q/TjG8ymf8Tlf8CVfMYGJfM03fMt3TGJy7IPsp/A9U5nGdGbwAzOZxWzmMJd5zGcBC2MfZL+IxSxhKctYzgpWsorV/MhP/Mwa1rIu9kH269nARjaxmS1sZRvb2cFOfmEXu9nDr7EPsv+N39nLPvZzgIMc4jB/cISjHOM4JzgZ+yD7U/zJac5wlnOc5wJ/8Tf/8C8XucRlrh55sQ+vD/H/jX38z2Mf//PY/zf+82t3vf/j/3t/BTQum7AQJwAA
+  </data>
+ </layer>
+ <layer name="water" width="125" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3PWwqCQBxG8QFbURe12ya8pJauV5fV6a2XgUQLgvOD8zL8GfhCkCRJkiRJkiRJkiRJkvRvtpsQdrSnA6WUUU5HOtGZLnSN3Cx5+9WeuTu/bUw+a0rW/e9Vwb6SKqrpRg211NGdHtTTELlZ8ra22J65O989AT/6wKcQJwAA
+  </data>
+ </layer>
+ <layer name="bg" width="125" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2XSU7DQBBFbceQMBwhzLBnyCUYss0BgCRsIJwgCYrEsIQNwxFgy3QJpkswijvwLWSp1KpuOyEdO6i+9JS4u1wu90+1HccRiUQikUgkEolEIpFIJBL1Wl+u47TAt5t0JelQ1nOcnJd0FXble7+et/rA8yXUWLBc5yTWY+qfex763Q+er6HGYht1cj07hPOHwQgYdbsz128KeseE7b6KW2NQR0ZTi+75xPXsNGJmwCyYc7szZ0u2fAh6JyRYUx8MgEGQBbkUeG7qb7pP0b1K15fb+L4DamBXydnpnC1Rb9rZ36JEPdZ5nlTfR/V3KM5zXV/u4/sBOARHSt5O57oldZ3zhDHmmtcYuwG34A7cMzHzGFsAi2TO5HnSfW/6fUc9h3rZl2oNnf4XUvs6Q/CZXA8YewRP4Bm8MDHLGFsBq5Y913lxgmfrsaf/pOcXDPeqrg+3//WiL7laim7892KurzMauHV4xdgbeAcf4JOJWcfYBti07Dn3jhDoCr5eevpPen7RcK+Bkt6DqEqKN3E95/o6zxDmLWONKqDq6fc5GlPGcQVUwdYfPY96zy8RwmcRF6fLQdfP15ybNs/zzL0WIlD7mubg+rwOHxug6en3ORpTx3EDNMEeWZsg/ziYaMNz7nr0ujWFMI8aZ8pjiqV7QBo8V++V1mlC19cc6jtcnJhTHJ+Bc3BB5n4AWaXg6BAnAAA=
+  </data>
+ </layer>
+ <layer name="bgtwo" width="125" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UN0/DYBhF4W+A2KS3LZT0ugVI70wMJNQUZlro/P+FE7EysNnI90jPaMnWtV5jlFJKKaWUcncNy5gmWmijgy566GOAIUYYY4ITy+m3dqYt25ht+GDBxg78CCCIEMKIIIoY4kggaTv9BT+dsd8UM5zjApe4wjVuMMcCS6xw69HNU2y2iz3s4wBpZJBFDnkUUEQJZVRQRc0lm9+x3z0e8IgnrPGMF7ziDe/4wCe+PLp5nc0OcYRjNNBEC2100EUPfQwwxAhjTFyyufp7p5tbzv/uRwBBhBBGBFHEEEcCyc2N5JkFllhp839Zmh0zyCKHPAooooQyKqii5tF7qJRSSimllFJKKaXUb30Dw4tBaxAnAAA=
+  </data>
+ </layer>
+ <layer name="block" width="125" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2W2wrEMAhE+9QfLrvk87uwBILEaMwdZ8CHtiGOOdo23NcVfgH5UQBzdwJzfwJzfwJzfwJzfwJzfwJzfwJzfwJzfzqJ+XP/A2rTScx7eI19k+sf67PTFM+R1rRTfdFHj95M96D7WZ+N0igO0uzs8A6weODO6yTmo/JomK+a+5b55hjtzJye8yrmufWzVPImfYdmzmWvmSj1WU+NYN76T5D2OZcvd187z71lzSXN9UnMW73H9S3MZ8rKXDonel36z87Fh0S6b61PKVfOe41XylyTI67/LgjKvLZOLXOaV6qf+krvz3z31ay3zPkOzGvr1F5zObn6OeYv+okPZBAnAAA=
+  </data>
+ </layer>
+ <objectgroup name="Object" width="125" height="20">
+  <object name="EnemyOne" x="368" y="240">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="UFO" x="1936" y="160"/>
+  <object name="EnemyTwo" x="1616" y="208"/>
+ </objectgroup>
+ <objectgroup name="starObjs" width="125" height="20">
+  <object name="star1" x="64" y="176"/>
+  <object name="star2" x="576" y="272"/>
+  <object name="star4" x="992" y="160"/>
+  <object name="star5" x="1424" y="272"/>
+  <object name="star6" x="1792" y="256"/>
+  <object name="star7" x="1216" y="160"/>
+  <object name="star8" x="784" y="112"/>
+  <object name="star3" x="1104" y="144"/>
+ </objectgroup>
+ <objectgroup name="moveObjs" width="125" height="20"/>
+ <objectgroup name="powerObjs" width="125" height="20">
+  <object name="shotrefill1" x="176" y="208"/>
+  <object name="shotrefill2" x="1536" y="240"/>
+ </objectgroup>
+</map>

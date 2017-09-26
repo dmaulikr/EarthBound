@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="71" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tilesnew" tilewidth="16" tileheight="16">
+  <image source="tilesnew.png" width="256" height="224"/>
+ </tileset>
+ <tileset firstgid="225" name="meta_tiles" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="meta_tiles.png" width="67" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="Stand" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="bg" width="71" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DAQ0AAAgDoGcygv1DmeAFHGwkAAAAAMA3Y73WB/QycfIwFgAA
+  </data>
+ </layer>
+ <layer name="block" width="71" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3QUQkAAAhDQfu3tIkJBPFz3MELsFUBAAAAAGlaawk+Oy6/DLcBTtAwFgAA
+  </data>
+ </layer>
+ <objectgroup name="Object" width="71" height="20">
+  <object name="EnemyOne" x="576" y="272"/>
+ </objectgroup>
+</map>
